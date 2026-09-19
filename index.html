@@ -1,100 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hassan Nasir - AI/ML & Electrical Engineer</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hassan Nasir - Electrical | Automation | AI/ML</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#080808;color:#fff;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;position:fixed;top:0;width:100%;background:rgba(8,8,8,0.7);backdrop-filter:blur(20px);z-index:100;border-bottom:1px solid #1a1a1a}
-.logo{font-weight:900;letter-spacing:-1px}
-.hero{padding:160px 6% 100px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:60px;align-items:center;min-height:90vh}
-.hero h1{font-size:clamp(38px,6vw,72px);line-height:0.9;font-weight:900;letter-spacing:-2px}
+body{background:#080808;color:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;position:fixed;top:0;width:100%;background:rgba(8,8,8,0.85);backdrop-filter:blur(20px);z-index:100;border-bottom:1px solid #1a1a1a}
+.hero{padding:140px 6% 80px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,64px);line-height:0.9;font-weight:900;letter-spacing:-2px}
 .hero h1 span{background:linear-gradient(90deg,#a3ff12,#12ffaa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.sub{color:#888;font-size:18px;margin:20px 0 30px;max-width:520px;line-height:1.6}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{background:#a3ff12;color:#000;padding:14px 26px;border-radius:100px;font-weight:700;font-size:14px}
-.btn2{border:1px solid #222;padding:14px 26px;border-radius:100px;font-weight:700;font-size:14px;background:#151515}
-.stats{display:flex;gap:40px;margin-top:50px;border-top:1px solid #1a1a1a;padding-top:30px}
-.stats b{font-size:28px;display:block}
-.stats span{color:#666;font-size:13px}
-section{padding:80px 6%}
-.pill{font-size:12px;letter-spacing:1px;color:#a3ff12;border:1px solid #1f2e00;background:#121a00;padding:6px 14px;border-radius:100px;display:inline-block;margin-bottom:20px}
-h2{font-size:clamp(30px,4vw,48px);letter-spacing:-1.5px;line-height:1}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:40px}
-.card{background:#111;border:1px solid #1e1e1e;border-radius:24px;padding:28px;transition:0.3s}
-.card:hover{border-color:#a3ff12;transform:translateY(-5px)}
-.card h3{font-size:20px;margin-bottom:8px}
-.card p{color:#888;font-size:14px;line-height:1.6;margin-bottom:20px}
-.tags{display:flex;gap:8px;flex-wrap:wrap}
-.tags span{font-size:11px;background:#1a1a1a;border:1px solid #222;padding:5px 10px;border-radius:100px;color:#aaa}
-.tech{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-.tech span{background:#111;border:1px solid #222;padding:10px 18px;border-radius:100px;font-size:13px}
-.contact-box{background:#a3ff12;color:#000;border-radius:40px;padding:60px 6%;margin:40px 2%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px}
-.contact-box h2{color:#000;font-size:clamp(32px,5vw,64px)}
-@media(max-width:900px){.hero,.contact-box{grid-template-columns:1fr}.hero{padding-top:120px}}
+.sub{color:#999;font-size:17px;margin:18px 0 28px;max-width:560px}
+.btn{background:#a3ff12;color:#000;padding:14px 26px;border-radius:100px;font-weight:700;font-size:14px;display:inline-block;margin-right:10px;margin-bottom:10px}
+.btn2{border:1px solid #222;background:#141414;padding:14px 26px;border-radius:100px;font-weight:700;font-size:14px;display:inline-block;margin-right:10px;margin-bottom:10px}
+section{padding:80px 6%;border-top:1px solid #111}
+.pill{font-size:11px;letter-spacing:1.2px;color:#a3ff12;border:1px solid #1e2f00;background:#111a00;padding:6px 14px;border-radius:100px;display:inline-block;margin-bottom:18px}
+h2{font-size:clamp(28px,4vw,44px);letter-spacing:-1.5px;line-height:1.1;margin-bottom:10px}
+.timeline{display:grid;gap:28px;margin-top:40px;max-width:900px}
+.job{background:#111;border:1px solid #1e1e1e;border-radius:24px;padding:28px}
+.job-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.job h3{font-size:18px}
+.job .where{color:#a3ff12;font-size:13px;font-weight:700}
+.job .when{color:#666;font-size:13px}
+.job ul{margin-left:18px;color:#aaa;font-size:14px}
+.job li{margin:6px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:30px}
+.card{background:#111;border:1px solid #1e1e1e;border-radius:20px;padding:24px}
+.card h3{font-size:16px;margin-bottom:8px}
+.card p{color:#888;font-size:13px;line-height:1.6}
+.skill-group{margin-top:30px}
+.skill-group h4{color:#a3ff12;font-size:12px;letter-spacing:1px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:#161616;border:1px solid #222;padding:8px 14px;border-radius:100px;font-size:12px;color:#bbb}
+.contact{background:#a3ff12;color:#000;border-radius:36px;padding:60px 6%;margin:40px 2%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px}
+@media(max-width:900px){.hero,.contact{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<nav>
-<div class="logo">HASSAN NASIR_</div>
-<div style="display:flex;gap:24px;font-size:13px;color:#aaa"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-</nav>
+<nav><b>HASSAN NASIR_</b><div style="display:flex;gap:20px;font-size:12px;color:#888"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="mailto:hassannassir1998@gmail.com">Contact</a></div></nav>
 
 <div class="hero">
 <div>
-<div class="pill">BASED IN TURIN, ITALY • OPEN TO WORK</div>
-<h1>AI/ML Engineer &<br><span>Electrical Engineer</span> bridging data & industry.</h1>
-<p class="sub">MS in Computer Engineering for Robotics & Smart Industry @ UniVR. I build anomaly detection, generative AI, and MPPT-optimized PV systems.</p>
-<div class="btns">
-<a class="btn" href="#work">View Projects →</a>
+<div class="pill">TURIN, ITALY • MS ROBOTICS & SMART INDUSTRY • OPEN TO WORK</div>
+<h1>Electrical Engineer turned<br><span>Automation & AI/ML Engineer</span></h1>
+<p class="sub">BE Electrical @ NED Karachi + MS Computer Engineering @ Verona (Thesis: Gen AI & Image Inpainting). 2 years at Transsion Tecno supporting automated production lines, AutoCAD Electrical, PLC, Power BI & Snowflake analytics that cut outages 25% and raised CSAT 15%. Research Intern at UniVR building real-time anomaly detection on MVTec with MobileNetV2 & PatchCore.</p>
+<div>
+<a class="btn" href="mailto:hassannassir1998@gmail.com">hassannassir1998@gmail.com →</a>
 <a class="btn2" href="https://github.com/HassanNasir1998" target="_blank">GitHub</a>
-<a class="btn2" href="https://www.instagram.com/i.hassan_nasir/" target="_blank">Instagram</a>
-</div>
-<div class="stats">
-<div><b>6+</b><span>PROJECTS</span></div>
-<div><b>MS + BE</b><span>DEGREES</span></div>
-<div><b>Turin</b><span>BASED</span></div>
+<a class="btn2" href="https://www.linkedin.com/in/hassan-nasir-129b7b139/" target="_blank">LinkedIn</a>
 </div>
 </div>
-<div style="background:#111;border:1px solid #222;border-radius:32px;aspect-ratio:1/1;overflow:hidden;position:relative">
-<img src="https://github.com/HassanNasir1998.png" style="width:100%;height:100%;object-fit:cover">
-<div style="position:absolute;top:20px;left:20px;background:#a3ff12;color:#000;font-size:12px;font-weight:700;padding:6px 12px;border-radius:100px">● AVAILABLE</div>
-</div>
+<div style="background:#111;border:1px solid #222;border-radius:32px;overflow:hidden;aspect-ratio:4/5"><img src="profile.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top"><div style="position:absolute;top:20px;left:20px;background:#a3ff12;color:#000;padding:6px 12px;border-radius:100px;font-size:11px;font-weight:800">● AVAILABLE FOR HIRE</div></div>
 </div>
 
-<section id="work">
-<div class="pill">SELECTED WORK</div>
-<h2>Projects that merge<br>AI with real hardware.</h2>
+<section id="experience">
+<div class="pill">EXPERIENCE</div>
+<h2>From plant floor to deep learning lab.</h2>
+<div class="timeline">
+<div class="job">
+<div class="job-head"><div><h3>Research Intern – Computer Vision & Anomaly Detection</h3><div class="where">University of Verona, Verona, Italy</div></div><div class="when">May 2024 - Jul 2024</div></div>
+<ul>
+<li>Designed & implemented real-time visual inspection pipeline achieving high detection accuracy across MVTec product categories – directly transferable to inline QC.</li>
+<li>Trained MobileNetV2 & PatchCore, systematically evaluated performance; optimized inference with multiple frameworks reducing latency vs baseline.</li>
+<li>Documented architecture, test protocols & traceability; built multimodal AI chatbot with RAG & embeddings.</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-head"><div><h3>Operation & Automation / Electrical Engineer</h3><div class="where">Transsion Tecno Electronics, Karachi, Pakistan</div></div><div class="when">Oct 2020 - Sep 2022</div></div>
+<ul>
+<li>Supported end-to-end deployment & commissioning of automated manufacturing lines, acting as liaison between electrical, automation & quality teams.</li>
+<li>Created & maintained AutoCAD Electrical docs: wiring diagrams, control layouts, as-built drawings – reducing troubleshooting time.</li>
+<li>Oversaw plant maintenance HVAC, Solar, Production lines + monthly/annual auditing of electrical systems.</li>
+<li><b>Advanced Analytics:</b> Power BI + Snowflake SQL for system health & risk detection; Historical failure analysis – predictive models cut outages 25%.</li>
+<li><b>Customer Analytics:</b> Analyzed FTTH fault data – workflow improvements raised CSAT 15% with SLA compliance.</li>
+<li>LAN/WAN & cross-connect configuration for efficient data comms.</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-head"><div><h3>Intern – PCSIR (Pakistan Council of Scientific & Industrial Research)</h3><div class="where">Karachi, Pakistan</div></div><div class="when">Jun 2019 - Dec 2019</div></div>
+<ul>
+<li>Collected & validated technical data for renewable energy feasibility; energy consumption analysis for efficiency proposals.</li>
+<li>Sensor data preprocessing (outliers, imputation), EDA & feature importance; quantized models for edge micro-controllers for real-time sensing.</li>
+<li>QA/QC documentation, ITPs, SOPs & pre-check lists for grid energization; coordination with Client & Owner Engineers.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="pill">PROJECTS</div>
+<h2>Thesis + production-grade ML.</h2>
 <div class="grid">
-<div class="card"><h3>🖼️ Gen AI & Image Inpainting</h3><p>Multi-method editing app combining PatchMatch & OpenCV Telea with InstructPix2Pix + GLIGEN.</p><div class="tags"><span>Python</span><span>OpenCV</span><span>Diffusers</span></div><br><a href="https://github.com/HassanNasir1998" style="color:#a3ff12;font-size:13px">View →</a></div>
-<div class="card"><h3>🔍 Real-Time Anomaly Detection</h3><p>MobileNetV2 & PatchCore pipeline on MVTec dataset, optimized for low-latency inference.</p><div class="tags"><span>PyTorch</span><span>MVTec</span><span>PatchCore</span></div></div>
-<div class="card"><h3>🛫 AI Trip Planner</h3><p>Agentic AI travel assistant generating personalized itineraries via LLM pipeline.</p><div class="tags"><span>LLM Agents</span><span>Python</span></div><br><a href="https://github.com/HassanNasir1998" style="color:#a3ff12;font-size:13px">GitHub →</a></div>
-<div class="card"><h3>☀️ Buck-Boost MPPT Converter</h3><p>Comparative study of PV topologies with MPPT optimization in Simulink.</p><div class="tags"><span>MATLAB</span><span>Simulink</span></div></div>
-<div class="card"><h3>📧 Spam Email Classifier</h3><p>TF-IDF + ML comparison at 98% accuracy.</p><div class="tags"><span>scikit-learn</span><span>NLP</span></div></div>
-<div class="card"><h3>🚗 VW-Audi Price Prediction</h3><p>25k UK listings, Random Forest R² 0.95, MAE £1,438.</p><div class="tags"><span>Pandas</span><span>RandomForest</span></div><br><a href="https://github.com/HassanNasir1998/vw-audi-price-comparison" style="color:#a3ff12;font-size:13px">GitHub →</a></div>
+<div class="card"><h3>🎓 Generative AI & Image Inpainting (Thesis)</h3><p>Gradio app integrating classical inpainting (PatchMatch, OpenCV Telea) with InstructPix2Pix & GLIGEN. Prompt-based editing & masked inpainting. System architecture & data pipelines for industrial apps.</p></div>
+<div class="card"><h3>🔍 Deep Learning for Anomaly Detection</h3><p>CNN + Autoencoder pipeline for classification & denoising. Autoencoder as preprocessing to improve robustness on noisy data. MVTec benchmark.</p></div>
+<div class="card"><h3>✈️ AI Trip Planner</h3><p>Python, FastAPI, Streamlit + LLM agents with custom tools for personalized itineraries. Structured logging, error handling, modular agentic workflows.</p></div>
+<div class="card"><h3>🚗 Used Car Price Prediction (VW/Audi UK)</h3><p>End-to-end pipeline on 25k listings. Feature engineering (mileage/year). Random Forest R² 0.95, MAE £1,438, 45% error reduction vs linear. Interactive dashboard.</p></div>
+<div class="card"><h3>📧 Spam Detection – 98% Accuracy</h3><p>TF-IDF + comparison MLP, SVM, Naive Bayes, KNN, Logistic Regression. Scikit-learn.</p></div>
+<div class="card"><h3>☀️ MPPT Buck-Boost Converter (BE Thesis)</h3><p>Comparative study of non-isolated topologies for MPPT-optimized Solar PV in MATLAB/Simulink. Efficiency & trade-off analysis.</p></div>
 </div>
 </section>
 
-<section id="about">
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
-<div><div class="pill">ABOUT</div><h2>Electrical roots,<br>AI future.</h2></div>
-<div><p style="color:#888;line-height:1.8">I'm Hassan, Turin. BE Electrical @ NED, MS Computer Engineering @ Verona. I started with MV/PV systems, AutoCAD Electrical, ETAP, and now build ML systems for edge. Collaborating with Data Scientists & ML Engineers.</p><div class="tech"><span>Python</span><span>C++</span><span>SQL</span><span>TensorFlow / PyTorch</span><span>OpenCV</span><span>scikit-learn</span><span>MATLAB</span><span>AutoCAD</span><span>ETAP</span></div></div>
-</div>
+<section id="skills">
+<div class="pill">SKILLS & CERTIFICATIONS</div>
+<h2>One stack from 220V to PyTorch.</h2>
+<div class="skill-group"><h4>ELECTRICAL DESIGN & CAD</h4><div class="chips"><span>AutoCAD Electrical</span><span>Wiring Diagrams</span><span>Control Layouts</span><span>Component Sizing</span><span>Technical Datasheets</span><span>As-Built Drawings</span><span>BoM</span><span>Layout Coordination</span></div></div>
+<div class="skill-group"><h4>SIMULATION & INDUSTRIAL TOOLS</h4><div class="chips"><span>MATLAB</span><span>Simulink</span><span>ETAP</span><span>Multisim</span><span>Dialux</span><span>PLC Basics</span><span>HVAC / Solar</span><span>Manufacturing</span></div></div>
+<div class="skill-group"><h4>PROGRAMMING & DATA</h4><div class="chips"><span>Python</span><span>C++</span><span>SQL</span><span>R</span><span>Power BI</span><span>Snowflake SQL</span><span>FastAPI</span><span>Streamlit</span><span>Gradio</span></div></div>
+<div class="skill-group"><h4>AI / ML / COMPUTER VISION</h4><div class="chips"><span>Deep Learning</span><span>CNNs</span><span>Autoencoders</span><span>MobileNetV2</span><span>PatchCore</span><span>OpenCV</span><span>scikit-learn</span><span>TF-IDF</span><span>RAG / LLM Agents</span><span>InstructPix2Pix / GLIGEN</span></div></div>
+<div class="skill-group"><h4>QUALITY & COMPLIANCE</h4><div class="chips"><span>QA/QC</span><span>PPAP</span><span>IATF Aligned</span><span>SOP</span><span>ITP</span><span>Inspection & Testing</span><span>Non-Conformity Handling</span><span>Traceability</span></div></div>
+<div class="skill-group"><h4>LANGUAGES</h4><div class="chips"><span>English C1</span><span>Italian B1 (improving)</span><span>Urdu Native</span></div></div>
+<div class="skill-group"><h4>CERTIFICATIONS</h4><div class="chips"><span>IBM AI Fundamentals</span><span>Google Data Analytics</span><span>Cybersecurity - LinkedIn</span><span>Electric Industry Operations & Markets</span><span>Energy Production, Distribution & Safety - Coursera</span><span>Industrial Automation: PLC Basics</span></div></div>
 </section>
 
-<div class="contact-box" id="contact">
-<div><h2>Let's build<br>something smart.</h2><p style="margin:20px 0;opacity:0.7">Open for AI/ML & Automation roles in Turin / Remote.</p><a href="mailto:hassannassir1998@gmail.com" style="background:#000;color:#a3ff12;padding:16px 30px;border-radius:100px;display:inline-block;font-weight:700">hassannassir1998@gmail.com</a></div>
-<div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
-<a href="https://github.com/HassanNasir1998" style="background:#000;color:#fff;padding:18px 24px;border-radius:16px;display:flex;justify-content:space-between">GitHub <span>→</span></a>
-<a href="https://www.linkedin.com/in/hassan-nasir-129b7b139/" style="background:#000;color:#fff;padding:18px 24px;border-radius:16px;display:flex;justify-content:space-between">LinkedIn <span>→</span></a>
-<a href="https://www.instagram.com/i.hassan_nasir/" style="background:#000;color:#fff;padding:18px 24px;border-radius:16px;display:flex;justify-content:space-between">Instagram @i.hassan_nasir <span>→</span></a>
-</div>
+<div class="contact" id="contact">
+<div><h2 style="font-size:52px;line-height:.9;letter-spacing:-2px">Let's build<br>something smart.</h2><p style="margin:20px 0;opacity:.7">Turin-based. Open to Electrical, Automation, Production, Data, Quality, IT & AI/ML roles. Remote & onsite.</p><a href="mailto:hassannassir1998@gmail.com" style="background:#000;color:#a3ff12;padding:16px 30px;border-radius:100px;display:inline-block;font-weight:800">hassannassir1998@gmail.com</a><div style="margin-top:16px;font-size:14px;opacity:.6">+39 353 307 6548 • Turin, Italy</div></div>
+<div style="display:flex;flex-direction:column;gap:12px;justify-content:center"><a href="https://github.com/HassanNasir1998" style="background:#000;color:#fff;padding:18px 24px;border-radius:16px;display:flex;justify-content:space-between">GitHub → github.com/HassanNasir1998</a><a href="https://www.linkedin.com/in/hassan-nasir-129b7b139/" style="background:#000;color:#fff;padding:18px 24px;border-radius:16px;display:flex;justify-content:space-between">LinkedIn → Hassan Nasir</a><a href="mailto:hassannassir1998@gmail.com" style="background:#fff;color:#000;padding:18px 24px;border-radius:16px;display:flex;justify-content:space-between;font-weight:700">Email Me →</a></div>
 </div>
 
-<div style="padding:30px 6%;display:flex;justify-content:space-between;color:#555;font-size:12px"><span>© 2026 Hassan Nasir — Turin, Italy</span><span>hassannasir1998.github.io</span></div>
+<div style="padding:30px 6%;display:flex;justify-content:space-between;color:#555;font-size:12px"><span>© 2026 Hassan Nasir — Built with Electrical + AI</span><span>hassannassir1998.github.io</span></div>
 </body>
 </html>
